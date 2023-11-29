@@ -17,14 +17,22 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa6";
 import pharris from "./images/Rectangle 5686 (2).png";
 import faheys from "./images/Plenty dot (1).png";
-import { IoHomeOutline } from "react-icons/io5";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
+
+
 
 const Rectangle = () => {
+
   return (
     <div>
+          <div className="navbar-contents">
+                <h1>Discover Your Next Home:</h1>
+                <p>Welcome to our apartment rental website! 
+                    We are dedicated to helping you find the 
+                    perfect place to call home. Our selection
+                    of properties includes a wide range 
+                    of options to suit every need and budget.
+                </p>
+            </div>
       <div className="home-new">
         <div className="form1">
           <form className="form2">
@@ -194,56 +202,7 @@ const Rectangle = () => {
         <img src={faheys} alt="" className="hers-image3" width="100%" />
       </div>
 
-        <footer>
-            <div className="footer-container">
-                <div className="footer-contents">
-                    <div className="footer-rent">
-                        <div className="rent-new">
-                            <h3>Rent <span className="pan">it</span></h3> 
-                            <IoHomeOutline className="home-icon2" />
-                        </div>
-                        <div className="info">
-                            <h6>info@rentit.com</h6>
-                            <h6>+234 (0) 805555 555</h6>
-                        </div>
-                    </div>
-                    <div className="footer-blogs">
-                        <div className="footer-sell">
-                            <h5>Buy,Rent & Sell</h5>
-                            <h6>Buy & Sell Properties</h6>
-                            <h6>Rent home</h6>
-                            <h6>Finance</h6>
-                        </div>
-                        <div className="footer-sell">
-                            <h5>About</h5>
-                            <h6>How it works</h6>
-                            <h6>Contact</h6>
-                            <h6>Company</h6>
-                        </div>
-                        <div className="footer-sell">
-                            <h5>Terms & Privacy</h5>
-                            <h6>Terms odf use</h6>
-                            <h6>Privacy Policy</h6>
-                            <h6>Trust & Security</h6>
-                        </div>
-                        <div className="footer-sell">
-                            <h5>Resources</h5>
-                            <h6>FAQ</h6>
-                            <h6>Blogs</h6>
-                            <h6>Guide</h6>
-                        </div>
-                    </div>
-                </div>
-                <div className="reserved">
-                    <p>© 2023 RentIt. All Rights Reserved.</p>
-                   <div className="far">
-                        <FaFacebookSquare className="facebook" />
-                        <FaLinkedin  className="linkedin" />
-                        <FaSquareInstagram className="instagram" />
-                    </div>
-                </div>
-            </div>
-        </footer>
+        
     </div>
   );
 };
