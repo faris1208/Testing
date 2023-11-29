@@ -79,13 +79,18 @@ line-height: normal;
   width: 70%;
   display: flex;
   flex-direction: row-reverse;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .login{
   display: none;
   /* margin: 20px 0px; */
 }
+
+.logins{
+  display: none;
+}
+
 
 .login.is-open{
   display: block;
@@ -95,15 +100,30 @@ line-height: normal;
 }
 
 .login ul{
-  padding: 10px 0px 10px;
+  padding: 10px 20px;
   list-style: none;
-  
+  background-color: rgba(36, 28, 28, 0.6);
+  text-align: center;
+  border-radius:4px ;
+  margin: 20px 0px 0px;
 }
 
 .login ul li{
+  color: #fff;
   margin: 10px 0px;
   font-size: 25px;
+  border-bottom: 2px solid whitesmoke;
 }
+
+.login ul li:hover{
+  background-color: #3B3386;
+  color: #fff
+}
+
+/* .login ul:hover{
+  background-color: #3B3386;
+  color: #fff
+} */
 /* .red{
   border: 2px solid green;
 } */
@@ -772,19 +792,24 @@ footer{
 }
 
 .listing-container{
-  padding: 90px 10px;
+  padding: 0px 10px;
+  /* border: 2px solid red; */
 }
 
 .listing-sales{
-  display: none;
+  /* display: none; */
   width: 100%;
+  /* border: 2px solid red; */
+
 }
 
 .price-tag{
+  width: 100%;
   display: flex;
   border-radius: 4px;
   background: var(--rentit-primary-color-100, #dbdae2);
   padding: 10px;
+  /* border: 2px solid green; */
 }
 
 .pricetag-icon{
@@ -803,14 +828,17 @@ footer{
 }
 
 .prices{
+  width: 100%;
+  /* border: 2px solid red; */
   display: flex;
+  justify-content: space-between;
   padding: 5px 13px;
   align-items: center;
   /* gap: 15px; */
   border-radius: 4px;
-  background: rgba(202, 201, 201, 0.1);
+  background: rgba(202, 201, 201, 0.6);
   /* background-color: rgb(194, 189, 189); */
-  margin: 0px 5px;
+  margin: 10px 5px;
 }
 
 .prices p{
@@ -826,7 +854,7 @@ footer{
 .prices-icon{
   /* fill: rgba(0, 0, 0, 0.00); */
   font-size: 14px;
-  margin: 0px 8px;
+  /* margin: 0px 12px; */
 }
 
 .type{
@@ -1101,7 +1129,7 @@ footer{
     display: none;
   }
   
-  .login{
+  .logins{
     display: flex;
   }
 
@@ -1113,13 +1141,13 @@ footer{
   }
   
 
-  .login ul{
+  .logins ul{
     display: flex;
     list-style: none;
     cursor: pointer;
   }
 
-  .login ul li{
+  .logins ul li{
     margin: 0px 8px;
     font-size: 20px;
     font-weight: 400;

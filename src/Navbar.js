@@ -33,6 +33,15 @@ const Navbar = () => {
                                 <li className="make">Make a posting</li>
                             </ul>
                         </div>
+
+                        <div className="logins">
+                            <ul>
+                                <li className="blogs" onClick={() => {navigate("/blog")}}>Blogs</li>
+                                <li className="blogs" onClick={() => {navigate("/listings")}}>Listings</li>
+                                <li className="log">Log in</li>
+                                <li className="make">Make a posting</li>
+                            </ul>
+                        </div>
                     </div>
             </div>
         
